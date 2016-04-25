@@ -119,7 +119,7 @@ def listSFO(file):
 			sys.exit(2)
 		if header.version != 0x00000101:
 			print "Error:  Found header version: (%08xh), but we where expecting header version (00000101h)." % header.version
-			print "\tPlease submit an issue at https://github.com/Spork-Schivago/PSL1GHT"
+			print "\tPlease submit an issue at https://github.com/ChillyWillyGuru/PSL1GHT"
 			sys.exit(2)
 		offset += len(header)
 		off1 = header.KeyOffset
@@ -166,7 +166,7 @@ def convertToXml(sfofile, xml):
 			sys.exit(2)
 		if header.version != 0x00000101:
 			print "Error:  Found header version: (%08xh), but we where expecting header version (00000101h)." % header.version
-			print "\tPlease submit an issue at https://github.com/Spork-Schivago/PSL1GHT"
+			print "\tPlease submit an issue at https://github.com/ChillyWillyGuru/PSL1GHT"
 			sys.exit(2)
 		offset += len(header)
 		off1 = header.KeyOffset
